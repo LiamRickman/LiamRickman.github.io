@@ -214,6 +214,7 @@
         z-index: 99;
         height: 50vh;
         font-size: 1.6rem;
+        border-bottom: 4px solid #00875a;
     }
 
     #navbar__logo {
@@ -237,7 +238,7 @@
         padding: 0 2rem;
         width: 100%;
         display: table;
-        padding-top: 80px;
+        padding-top: 10px;
     }
 
     #mobile-menu {
