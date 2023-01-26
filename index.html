@@ -11,6 +11,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- RETURN TO TOP -->
+    <a onclick="topFunction()" id="top__button" title="Return to top"><i class="fa-solid fa-arrow-up"></i></a>
+
+    <!-- NAVBAR -->
     <section class="home" id="home">
         <nav class="navbar">
             <div class="navbar__container">
@@ -29,8 +33,7 @@
             </div>
         </nav>
 
-    <!-- ABOUT ME -->
-
+        <!-- ABOUT ME -->
         <div class="home__container">
             <div class="home__title">
                 <h1>LIAM RICKMAN</h1>
@@ -47,22 +50,19 @@
                     <br>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim minim.</p>
                     <br>
-                    <button class="default__btn"><a href="Documents/LiamRickman-CV.pdf" target="_blank">View CV</a></button>
+                    <a href="Documents/LiamRickman-CV.pdf" class="button">View CV</a>
                 </div>
             </div>
-
         </div>
     </section>
 
-    <hr class="seperator">
+    <hr class="horizontal-line">
 
-    <!-- PROJECTS -->
+    <!-- LATEST PROJECT -->
     <section class="latest" id="latest">
         <div class="latest__container">
-            <div class="experience__title">
-                <h1>LATEST PROJECT</h1>
-            </div>
-            <hr>
+            <div class=section__title><h1>LATEST PROJECT</h1></div>
+
             <div class="latest__grid">
                 <div class="latest__img--container">
                     <img src="Projects/Images/HonoursProject/UnrealEngine.png" alt="Latest Project" id="latest__img">
@@ -73,9 +73,9 @@
                     <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim minim.”</p>
                     <br>
                     <div class="latest__content--buttons">
-                        <button class="default__btn"><a href="Projects/HonoursProject.html">View project</a></button>
+                        <a href="Projects/HonoursProject.html" class="button">Honours project</a>
                         <br>
-                        <button class="default__btn"><a href="projects.html">Other projects</a></button>
+                        <a href="projects.html" class="button">Other projects</a>
                     </div>
 
                 </div>
@@ -83,17 +83,16 @@
         </div>
     </section>
 
-    <hr class="seperator">
+    <hr class="horizontal-line">
 
     <!-- EXPERIENCE -->
     <section class="experience" id="experience">
         <div class="experience__container">
-            <div class="experience__title">
+            <div class=section__title>
                 <h1>EXPERIENCE</h1>
             </div>
-            <hr>
-            <div class="experience__grid--L">
-                <div class="experience__img--container--L">
+            <div class="experience__grid">
+                <div class="experience__img--container">
                     <img src="Images/Rockstar.png" alt="Rockstar Games" id="experience__img">
                 </div>
                 <div class="experience__content">
@@ -106,9 +105,11 @@
                     <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.”</p>
                 </div>
             </div>
-            <hr>
-            <div class="experience__grid--L">
-                <div class="experience__img--container--L">
+            <br>
+            <hr class="dots">
+            <br>
+            <div class="experience__grid">
+                <div class="experience__img--container">
                     <img src="Images/Abertay.png" alt="Abertay University" id="experience__img">
                 </div>
                 <div class="experience__content">
@@ -122,9 +123,11 @@
                 </div>
 
             </div>
-            <hr>
-            <div class="experience__grid--L">
-                <div class="experience__img--container--L">
+            <br>
+            <hr class="dots">
+            <br>
+            <div class="experience__grid">
+                <div class="experience__img--container">
                     <img src="Images/DundeeAndAngus.jpg" alt="Dundee and Angus College" id="experience__img">
                 </div>
                 <div class="experience__content">
@@ -140,15 +143,14 @@
         </div>
     </section>
 
-    <hr class="seperator">
+    <hr class="horizontal-line">
     
     <!-- CONTACT -->
     <section class="contact" id="contact">
         <div class="contact__container">
-            <div class="experience__title">
+            <div class=section__title>
                 <h1>CONTACT ME</h1>
             </div>
-            <hr>
             <p>Feel free to get in touch below. Email is preferred, but LinkedIn and Twitter are available.</p>
             <div class="contact__info">
                 <a href="https://www.linkedin.com/in/liam-rickman/" class="contact__icon" target="_blank"><i class="fa-brands fa-linkedin"></i>/liam-rickman</a>
@@ -158,14 +160,14 @@
 
     </section>
 
-    <hr class="seperator">
+    <hr class="horizontal-line">
 
     <!-- FOOTER -->
     
         <div class="footer__container">
             <div class="social__media">
                 <div class="social__media--wrap">
-                    <p class="website__right">Liam Rickman | © 2023 All rights reserved</p>
+                    <p class="website__right">Liam Rickman | © <span id="copyright-year"></span> All rights reserved</p>
                     <div class="social__icons">
                         <a href="https://www.linkedin.com/in/liam-rickman/" class="social__icon--link" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
                         <a href="mailto:liam.rickman@hotmail.com" class="social__icon--link" target="_blank"><i class="fa-solid fa-envelope"></i></a>

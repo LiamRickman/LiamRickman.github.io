@@ -11,6 +11,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- RETURN TO TOP -->
+    <a onclick="topFunction()" id="top__button" title="Return to top"><i class="fa-solid fa-arrow-up"></i></a>
+
+    <!-- NAVBAR -->
     <nav class="navbar">
         <div class="navbar__container">
             <a href="index.html" id="navbar__logo">LIAM RICKMAN</a>
@@ -31,10 +35,9 @@
     <!-- PROJECTS -->
     <section class="projects" id="projects">
         <div class="projects__container">
-            <div class="experience__title">
+            <div class="section__title">
                 <h1>MY PROJECTS</h1>
             </div>
-            <hr>
             <div class="projects__grid">
                 <div class="projects__card" onclick="location.href='Projects/HonoursProject.html'">
                     <img src="Projects/Images/HonoursProject/UnrealEngine.png" alt="Honours Project" id="projects__img">
@@ -47,7 +50,7 @@
                     <div class="projects__card--info">
                         <h3 class="projects__card--date">2022-23</h3>
                         <br>
-                        <button class="default__btn"><a href="Projects/HonoursProject.html" target="_blank">View more</a></button>
+                        <a href="Projects/HonoursProject.html" target="_blank" class="button">View more</a>
                     </div>
                 </div>
                 <div class="projects__card" onclick="location.href='Projects/HelpMarkEscape.html'">
@@ -61,7 +64,7 @@
                     <div class="projects__card--info">
                         <h3 class="projects__card--date">2022</h3>
                         <br>
-                        <button class="default__btn"><a href="Projects/HelpMarkEscape.html" target="_blank">View more</a></button>
+                        <a href="Projects/HelpMarkEscape.html" target="_blank" class="button">View more</a>
                     </div>
                 </div>
                 <div class="projects__card" onclick="location.href='Projects/MeleePlayerController.html'">
@@ -75,7 +78,7 @@
                     <div class="projects__card--info">
                         <h3 class="projects__card--date">2022</h3>
                         <br>
-                        <button class="default__btn"><a href="Projects/MeleePlayerController.html" target="_blank">View more</a></button>
+                        <a href="Projects/MeleePlayerController.html" target="_blank" class="button">View more</a>
                     </div>
                 </div>
                 <div class="projects__card" onclick="location.href='Projects/UFOResistance.html'">
@@ -89,7 +92,7 @@
                     <div class="projects__card--info">
                         <h3 class="projects__card--date">2021-22</h3>
                         <br>
-                        <button class="default__btn"><a href="Projects/UFOResistance.html" target="_blank">View more</a></button>
+                        <a href="Projects/UFOResistance.html" target="_blank" class="button">View more</a>
                     </div>
                 </div>
                 <div class="projects__card" onclick="location.href='Projects/FPSPrototype.html'">
@@ -103,7 +106,7 @@
                     <div class="projects__card--info">
                         <h3 class="projects__card--date">2021-22</h3>
                         <br>
-                        <button class="default__btn"><a href="Projects/FPSPrototype.html" target="_blank">View more</a></button>
+                        <a href="Projects/FPSPrototype.html" target="_blank" class="button">View more</a>
                     </div>
                 </div>
                 <div class="projects__card" onclick="location.href='Projects/ColourVision.html'">
@@ -117,7 +120,7 @@
                     <div class="projects__card--info">
                         <h3 class="projects__card--date">2021</h3>
                         <br>
-                        <button class="default__btn"><a href="Projects/ColourVision.html" target="_blank">View more</a></button>
+                        <a href="Projects/ColourVision.html" target="_blank" class="button">View more</a>
                     </div>
                 </div>
                 <div class="projects__card" onclick="location.href='Projects/ScrapNSwap.html'">
@@ -131,7 +134,7 @@
                     <div class="projects__card--info">
                         <h3 class="projects__card--date">2021</h3>
                         <br>
-                        <button class="default__btn"><a href="Projects/ScrapNSwap.html" target="_blank">View more</a></button>
+                        <a href="Projects/ScrapNSwap.html" target="_blank" class="button">View more</a>
                     </div>
                 </div>
                 <div class="projects__card" onclick="location.href='Projects/TheLostArk.html'">
@@ -145,7 +148,7 @@
                     <div class="projects__card--info">
                         <h3 class="projects__card--date">2020</h3>
                         <br>
-                        <button class="default__btn"><a href="Projects/TheLostArk.html" target="_blank">View more</a></button>
+                        <a href="Projects/TheLostArk.html" target="_blank" class="button">View more</a>
                     </div>
                 </div>
                 <div class="projects__card" onclick="location.href='Projects/TrainyardDiorama.html'">
@@ -159,7 +162,7 @@
                     <div class="projects__card--info">
                         <h3 class="projects__card--date">2020</h3>
                         <br>
-                        <button class="default__btn"><a href="Projects/TrainyardDiorama.html" target="_blank">View more</a></button>
+                        <a href="Projects/TrainyardDiorama.html" target="_blank" class="button">View more</a>
                     </div>
                 </div>
                 <div class="projects__card" onclick="location.href='Projects/SlippingMinds.html'">
@@ -173,20 +176,20 @@
                     <div class="projects__card--info">
                         <h3 class="projects__card--date">2019</h3>
                         <br>
-                        <button class="default__btn"><a href="Projects/SlippingMinds.html" target="_blank">View more</a></button>
+                        <a href="Projects/SlippingMinds.html" target="_blank" class="button">View more</a>
                     </div>
                 </div>
             </div>            
         </div>
     </section>
     
-    <hr class="seperator">
+    <hr class="horizontal-line">
     
     <!-- CONTACT / FOOTER -->
     <div class="footer__container">
         <div class="social__media">
             <div class="social__media--wrap">
-                <p class="website__right">Liam Rickman | © 2023 All rights reserved</p>
+                <p class="website__right">Liam Rickman | © <span id="copyright-year"></span> All rights reserved</p>
                 <div class="social__icons">
                     <a href="https://www.linkedin.com/in/liam-rickman/" class="social__icon--link" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
                     <a href="mailto:liam.rickman@hotmail.com" class="social__icon--link" target="_blank"><i class="fa-solid fa-envelope"></i></a>
