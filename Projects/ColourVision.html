@@ -33,25 +33,32 @@
     </nav>
 
     <!-- PROJECT SUMMARY -->
-    <section class="summary" id="summary">
-        <div class="summary__container">
+    <section class="background1" id="project-summary">
+        <div class="container1">
             <div class="section__title">
                 <h1>COLOUR VISION</h1>
             </div>
             <div class="summary__grid">
-                <div class="summary__grid--left">
-                    <h2>Role and Responsibilities</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim minim.</p>
-                    <h2>Project Summary</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <div class="summary__left">
+                    <h2 class="summary__heading">Roles</h2>
+                    <p>Lead Programmer and Level Designer (Team: 7)</p>
+                    <h2 class="summary__heading">Project Summary</h2>
+                    <p>ColourVision is a 2D isometric dungeon crawler featuring a lizard wizard who has stolen all the colour from the world leaving it in greyscale.</p>
+                    <br>
+                    <p>The players goal is to bring back colour to the world by defeating the lizard wizard and his many minions.</p>
+                    <br>
+                    <br>
+                    <p>As lead programmer I was in charge of the majority of the games programming and implementing assets to create the final product in the game engine of choice (Unity).</p>
+                    <br>
+                    <p>I also helped out with level design work primarily in-engine.</p>
                 </div>
                 <div class="vertical-line"></div>
-                <div class="summary__grid--right">   
-                    <h2>Year</h2>
+                <div class="summary__right">   
+                    <h2 class="summary__heading">Year</h2>
                     <p>2021</p>
-                    <h2>Platform</h2>
+                    <h2 class="summary__heading">Platform</h2>
                     <p>PC</p>
-                    <h2>Software Used</h2>
+                    <h2 class="summary__heading">Software Used</h2>
                     <p>Unity 2019.4.19</p>
                 </div>
             </div> 
@@ -61,13 +68,13 @@
     <hr class="horizontal-line">
 
     <!-- GAMEPLAY VIDEO -->
-    <section class="gameplay" id="gameplay">
-        <div class="gameplay__container">
+    <section class="background2" id="gameplay-video">
+        <div class="container2">
             <div class="section__title">
                 <h1>GAMEPLAY VIDEO</h1>
             </div>
             <div>
-                <iframe class="gameplay__video" src="https://www.youtube.com/embed/ueExncPHV6o"> </iframe>
+                <iframe class="showcase__video" src="https://www.youtube.com/embed/ueExncPHV6o"> </iframe>
             </div>
             
         </div>
@@ -76,34 +83,34 @@
     <hr class="horizontal-line">
 
     <!-- GAMEPLAY VIDEO -->
-    <section class="screenshots" id="screenshots">
-        <div class="screenshots__container">
+    <section class="background1" id="screenshots">
+        <div class="container1">
             <div class="section__title">
                 <h1>SCREENSHOTS</h1>
             </div>
-            <div class = "screenshots__grid">
-                <div class="screenshots__card">
-                    <img src="Images/ColourVision/MainMenu.png" alt="Colour Vision | Main Menu" id="screenshots__img">
+            <div class = "showcase__grid">
+                <div class="showcase__card">
+                    <img src="Images/ColourVision/MainMenu.png" alt="Colour Vision | Main Menu" id="showcase__img">
                     <h2>Main Menu</h2>
                 </div>
-                <div class="screenshots__card">
-                    <img src="Images/ColourVision/Diner.png" alt="Colour Vision | Diner" id="screenshots__img">
+                <div class="showcase__card">
+                    <img src="Images/ColourVision/Diner.png" alt="Colour Vision | Diner" id="showcase__img">
                     <h2>Diner (Level 1)</h2>
                 </div>
-                <div class="screenshots__card">
-                    <img src="Images/ColourVision/Arcade.png" alt="Colour Vision | Arcade" id="screenshots__img">
+                <div class="showcase__card">
+                    <img src="Images/ColourVision/Arcade.png" alt="Colour Vision | Arcade" id="showcase__img">
                     <h2>Arcade (Level 3)</h2>
                 </div>
-                <div class="screenshots__card">
-                    <img src="Images/ColourVision/BossFight.png" alt="Colour Vision | Boss Fight" id="screenshots__img">
+                <div class="showcase__card">
+                    <img src="Images/ColourVision/BossFight.png" alt="Colour Vision | Boss Fight" id="showcase__img">
                     <h2>Boss Fight</h2>
                 </div>
-                <div class="screenshots__card">
-                    <img src="Images/ColourVision/Cutscene.png" alt="Colour Vision | Cutscenes" id="screenshots__img">
+                <div class="showcase__card">
+                    <img src="Images/ColourVision/Cutscene.png" alt="Colour Vision | Cutscenes" id="showcase__img">
                     <h2>Cutscenes</h2>
                 </div>
-                <div class="screenshots__card">
-                    <img src="Images/ColourVision/LevelIntro.png" alt="Colour Vision | Level Intros" id="screenshots__img">
+                <div class="showcase__card">
+                    <img src="Images/ColourVision/LevelIntro.png" alt="Colour Vision | Level Intros" id="showcase__img">
                     <h2>Level Intros</h2>
                 </div>
             </div>        
@@ -116,7 +123,7 @@
     <div class="footer__container">
         <div class="social__media">
             <div class="social__media--wrap">
-                <p class="website__right">Liam Rickman | © 2023 All rights reserved</p>
+                <p class="website__right">Liam Rickman | © <span id="copyright-year"></span> All rights reserved</p>
                 <div class="social__icons">
                     <a href="https://www.linkedin.com/in/liam-rickman/" class="social__icon--link" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
                     <a href="mailto:liam.rickman@hotmail.com" class="social__icon--link" target="_blank"><i class="fa-solid fa-envelope"></i></a>
