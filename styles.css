@@ -510,7 +510,7 @@
 
 /* -------- latest PROJECT -------- */
 .latest {
-    background-color: var(--background2);
+    background-color: var(--background1);
     padding-bottom: 2rem;
 }
 
@@ -519,7 +519,7 @@
     justify-self: center;
     margin: 0 auto;
     height: auto;
-    background-color: var(--background2);
+    background-color: var(--background1);
     width: 100%;
     max-width: 1300px;
     padding-right: 50px;
@@ -642,7 +642,7 @@
 
 /* -------- EXPERIENCE -------- */
 .experience {
-    background-color: var(--background1);
+    background-color: var(--background2);
     padding-bottom: 2rem;
 }
 
@@ -651,7 +651,7 @@
     justify-self: center;
     margin: 0 auto;
     height: auto;
-    background-color: var(--background1);
+    background-color: var(--background2);
     z-index: 1;
     width: 100%;
     max-width: 1300px;
@@ -662,7 +662,7 @@
 .experience__grid {
     display: grid;
     grid-template-columns: 25% 75%;
-    background-color: var(--background1);
+    background-color: var(--background2);
     align-items: center;
     padding-top: 3rem;
     padding-bottom: 3rem;
