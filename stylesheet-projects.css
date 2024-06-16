@@ -1,0 +1,457 @@
+/* ----------------------------------- GENERAL CSS ----------------------------------- */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    color: var(--main-text);
+}
+
+:root {
+    --main-text: #fff;
+    --image-border: #000;
+    --background: #222;
+    --accent: #00875a;
+    --navbar: #111;
+}
+
+.button {
+    display: inline-block;
+    background: var(--accent);
+    color: var(--main-text);
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 14px 32px;
+    margin-top: 2rem;
+    border-radius: 0.5rem;
+    border: solid var(--accent);
+    transition: all 0.35s;
+    text-decoration: none;
+    text-align: center;
+}
+
+.button:hover {
+    color: var(--accent);
+    background: none;
+    scale: 1.00;
+}
+
+.youtube_video {
+    width: 100%;
+    aspect-ratio: 16/9;
+    border-radius: 4px;
+    border: 4px solid var(--image-border);
+}
+
+.youtube_video:hover {
+    border-color: var(--accent);
+    transition: .1s ease-in;
+}
+
+.inline_link {
+    font-style: italic;
+}
+
+.inline_link:hover {
+    color: var(--accent);
+}
+
+#documents {
+    background-color: #fff;
+    border: 4px solid var(--image-border);
+    border-radius: 10px;
+    width: 100%;
+    height: 500px;
+    color: var(--main-text);
+}
+
+/* ----------------------------------- NAVBAR CSS ----------------------------------- */
+
+.navbar {
+    background: var(--navbar);
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    border-bottom: 4px solid var(--accent);
+}
+
+.navbar_container {
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+#navbar_logo {
+    color: var(--accent);
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.navbar_menu {
+    list-style: none;
+    display: flex;
+    text-align: center;
+    width: auto;
+    white-space: nowrap;
+    align-items: center;
+}
+
+.navbar_links {
+    color: var(--main-text);
+    display: flex;
+    text-decoration: none;
+    padding: 1rem;
+    
+}
+
+.navbar_links:hover {
+    color: var(--accent);
+    transition: all 0.3s ease;
+}
+
+/* ----------------------------------- Footer CSS ----------------------------------- */
+.footer_container {
+    background: var(--navbar);
+    height: 60px;
+    border-top: 2px solid var(--accent);
+    padding-top: 20px;
+    
+}
+
+.footer_copyright {
+    color: var(--main-text);
+    font-size: 1rem;
+    text-align: center;
+}
+
+/* ----------------------------------- Section CSS -----------------------------------*/
+.section {
+    background: var(--background);
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    scroll-margin-top: 80px;
+}
+
+.section_text {
+    font-size: 1.2rem;
+    font-weight: 100;
+    padding-bottom: 25px;
+}
+
+.section_container {
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px;
+    height: auto;
+    margin-left: 100px;
+    margin-right: 100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.heading_container {
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 25px
+}
+
+.heading_text {
+    font-size: 2rem;
+
+}
+
+.heading_underline {
+    margin-top: 5px;
+    color: var(--accent);
+    border: 2px solid var(--accent);
+}
+
+.sub_heading {
+    font-size: 1.5rem;
+    color: var(--accent);
+    padding-bottom: 10px;
+}
+/* ----------------------------------- Project Summary CSS ----------------------------------- */
+#summary {
+    padding-top: 80px;
+}
+
+.summary_grid {
+    display: grid;
+    grid-template-columns: 1.5fr 2px 1fr;
+    column-gap: 25px;
+}
+
+.description {
+    font-size: 1.2rem;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.summary_line {
+    border: 1px solid var(--accent);
+    height: 100%;
+    background: #444;
+}
+
+.about_heading {
+    color: var(--accent);
+    padding-bottom: 10px;
+    font-size: 1.3rem;
+}
+
+.about_text {
+    padding-bottom: 25px;
+    font-size: 1.2rem;
+}
+
+#about_link:hover {
+    color: var(--accent);
+}
+
+#about_buttons {
+    margin-right: 25px;
+}
+
+/* ----------------------------------- Gameplay Video CSS ----------------------------------- */
+.gameplay_video {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* ----------------------------------- Slideshow CSS ----------------------------------- */
+.slideshow_container {
+    position: relative;
+    padding-bottom: 80px;
+}
+
+.slide {
+    display: none;
+}
+
+.slideshow_prev,
+.slideshow_next {
+    cursor: pointer;
+    position: absolute;
+    top: 45%;
+    width: auto;
+    padding: 10px;
+    margin-left: 10px;
+    color: white;
+    font-weight: bold;
+    font-size: 2rem;
+    border-radius: 3px;
+    user-select: none;
+    -webkit-user-select: none;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.slideshow_next {
+    right: 0;
+    margin-left: 0;
+    margin-right: 10px;
+    
+}
+
+.slideshow_prev:hover,
+.slideshow_next:hover {
+  color: var(--accent);
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+#slide_img {
+    width: 100%;
+    border-radius: 4px;
+    border: 4px solid var(--image-border);
+}
+
+.slide_title,
+.slide_number {
+    position: absolute;
+    padding-top: 10px;
+    
+}
+
+.slide_title {
+    font-size: 1.3rem;
+}
+
+.slide_number {
+    font-size: 1.3rem;
+    right: 0;
+}
+
+/* ----------------------------------- Modal CSS ----------------------------------- */
+.modal_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 50px;
+    padding-bottom: 50px;
+  } 
+
+
+ #modal_img {
+    border-radius: 4px;
+    border: 4px solid var(--image-border);
+    cursor: pointer;
+    transition: 0.3s;
+    width: 100%;
+  }
+  
+  #modal_img:hover {
+    border-color: var(--accent);
+}
+
+.modal_text {
+    font-size: 1.2rem;
+}
+
+.modal_popup {
+    display: none; 
+    position: fixed; 
+    padding-top: 120px; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.9); 
+}
+
+.modal_content {
+    display: block;
+    width: 100%;
+    max-width: 1300px;
+    border: 4px solid var(--accent);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#modal_caption {
+    margin: auto;
+    display: block;
+    text-align: center;
+    height: 150px;
+    padding-top: 25px;
+    font-size: 1.3rem;
+}
+
+.modal_content, #modal_caption {
+    animation-name: zoom;
+    animation-duration: 0.5s;
+}
+
+@keyframes zoom {
+    from {transform:scale(0)}
+    to {transform:scale(1)}
+}
+
+.modal_close,
+.modal_close_hidden {
+    font-size: 3rem;
+    font-weight: bold;
+    transition: 0.3s;
+    margin-left: 20px;
+    height: fit-content;
+}
+
+.modal_close:hover,
+.modal_close:focus {
+    color: var(--accent);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal_close_hidden {
+    margin-left: 0px;
+    margin-right: 20px;
+    visibility: hidden;
+}
+
+.modal_title_left,
+.modal_title_right {
+    font-size: 1.3rem;
+    padding-top: 5px;
+}
+
+.modal_title_right {
+    text-align: right;
+}
+  
+.modal_img_container {
+    display: flex;
+    justify-content: center;
+}
+
+.modal_content_container {
+    max-width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* ----------------------------------- Full width CSS ----------------------------------- */
+#full_img {
+    width: 100%;
+    border: 4px solid var(--image-border);
+    border-radius: 5px;
+}
+
+.full_img_title {
+    font-size: 1.3rem;
+    padding-top: 10px;
+    padding-bottom: 50px;
+}
+
+.full_text {
+    font-size: 1.2rem;
+    padding-bottom: 25px;
+}
+
+.full_heading {
+    font-size: 1.3rem;
+    color: var(--accent);
+    padding-bottom: 15px;
+}
+
+/* ----------------------------------- Project Report/Document CSS ----------------------------------- */
+.extra_documents {
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#document_buttons {
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.extra_documents_downloads {
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* ----------------------------------- Bullet Points CSS ----------------------------------- */
+.bullet_list {
+    padding-left: 20px;
+}
+
+.bullet_list_item {
+    padding-bottom: 10px;
+
+}

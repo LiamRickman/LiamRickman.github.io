@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="image/png" href="../Files\Images\favicon.png">
+    <link rel="stylesheet" href="../stylesheet-projects.css">
+    <script src="https://kit.fontawesome.com/96805f0250.js" crossorigin="anonymous"></script>
+    <title>LR | Melee Combat Prototype</title>
+</head>
+
+<body>   
+    <!-- Navbar -->
+    <section class="home" id="home">
+        <nav class="navbar">
+            <div class="navbar_container">
+                <a href="index.html" id="navbar_logo">LR</a>
+                <ul class="navbar_menu">
+                    <li><a href="../index.html" class="navbar_links">Home</a></li>
+                    <li><a href="../game-development.html" class="navbar_links">Game Development</a></li>
+                    <li><a href="../programming.html" class="navbar_links">Programming</a></li>
+                    <li><a href="../index.html#about" class="navbar_links">About</a></li>
+                    <li><a href="../index.html#contact" class="navbar_links">Contact</a></li>
+                </ul>
+            </div>   
+        </nav>
+    </section>
+
+    <!-- Summary -->
+    <section class="section" id="summary">
+        <div class="section_container"> 
+            <div class="heading_container">
+                <h1 class="heading_text">Melee Combat Prototype</h1>
+                <hr class="heading_underline">
+            </div>
+
+            <div class="summary_grid">
+                <div class="description">
+                    <p><span style="font-style: italic">Melee Combat Prototype</span> was a technical design project where I created a third-person player controller focusing on melee combat.
+                        <br><br>For this project I wanted to learn more about Unreal Engine. Having previously created first-person games, I also wanted to experiment with third-person perspectives to see the differences in design.
+                        <br><br>I started with the player controller’s basic movement and then iterated, adding features such as dodging, vaulting, and climbing.
+                        <br><br>Instead of using projectile weapons like I had also done previously, I made this controller melee only, giving the player a thermal katana which the player can charge up to enhance their attacks.
+                    </p>
+                </div>
+
+                <div class="summary_line"></div>
+
+                <div> 
+                    <h1 class="about_heading">Development</h1>
+                    <p class="about_text">2022 (Solo)</p>
+                    <h1 class="about_heading">Platform</h1>
+                    <p class="about_text">PC</p>
+                    <h1 class="about_heading">Software Used</h1>
+                    <p class="about_text"><a href="https://www.unrealengine.com/en-US/unreal-engine-4" target="_blank" id="about_link">Unreal Engine 4</a></p>
+                    <div class="about_buttons">
+                        <a href="https://1drv.ms/u/s!At8h6C5hjSPoi4FmTxn59pKWS66DRg?e=jXYGfB" class="button" id="about_buttons" target="_blank">Game Download</a>
+                        <a href="https://github.com/LiamRickman/Melee-Combat-Prototype" class="button" target="_blank">GitHub Repository</a>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!-- YouTube Video -->
+    <section class="section" id="youtube">
+        <div class="section_container"> 
+            <div class="heading_container">
+                <h1 class="heading_text">Gameplay Demo</h1>
+                <hr class="heading_underline">
+            </div>
+
+            <div class="gameplay_video">
+                <iframe class="youtube_video" src="https://www.youtube.com/embed/RL1EuZFDUPY"> </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Movement -->
+    <section class="section" id="movement">
+        <div class="section_container"> 
+            <div class="heading_container">
+                <h1 class="heading_text">Movement</h1>
+                <hr class="heading_underline">
+            </div>
+
+            <div class="full_text">
+                <p>I wanted to focus on movement initially for this prototype, taking inspiration from games like Dark Souls, and The Witcher. I first implemented the characters basic movement including sprinting and crouching, before moving on to more advanced mechanics.
+                <br><br>A climbing mechanic was added to let the player climb or vault over objects depending on their height. This uses line traces to determine what animations and movement to use.
+                <br><br>I also added dodging to allow the player to avoid attacks and add more skill expression to combat. Dodging can be performed in any direction and makes the player invincible while completing the dodge.
+                </p>
+            </div>
+
+            <div class="modal_container"> 
+                <div id="modal1">
+                    <img id="modal_img" src="../Files/Images/Game Development/Melee-Combat-Prototype/Dodging.png" alt="Dodging">
+                    <div class="modal_title_left">Dodging</div>
+                </div>
+
+                <div id="modal2">
+                    <img id="modal_img" src="../Files/Images/Game Development/Melee-Combat-Prototype/Climbing.png" alt="Climbing / Vaulting">
+                    <div class="modal_title_right">Climbing / Vaulting</div>
+                </div>
+            </div>   
+        </div>
+    </section>
+
+    <!-- Combat -->
+    <section class="section" id="combat">
+        <div class="section_container"> 
+            <div class="heading_container">
+                <h1 class="heading_text">Combat</h1>
+                <hr class="heading_underline">
+            </div>
+
+            <div class="full_text">
+                <p>For the melee attacks, I decided on a sword, where I first added basic attacks – both light and heavy which have different animations and deal damage accordingly. I also added combos depending on whether the player performs light or heavy attacks. After performing three attacks the player will deal bonus damage.
+                <br><br>To limit attack spam and make the player think more about what attacks they are performing, I added a stamina meter to limit players from constantly attacking. There is also an overcharge meter that fills up while dealing damage. This can be activated to deal extra damage with attacks for a short time.
+                <br><br>Finally, so the player can test their attacks, I created some enemy AI and training dummies the player can practice their attacks and combos on.
+                </p>
+            </div>
+
+            <div class="modal_container"> 
+                <div id="modal1">
+                    <img id="modal_img" src="../Files/Images/Game Development/Melee-Combat-Prototype/Attack.png" alt="Regular Attack">
+                    <div class="modal_title_left">Regular Attack</div>
+                </div>
+
+                <div id="modal2">
+                    <img id="modal_img" src="../Files/Images/Game Development/Melee-Combat-Prototype/OverchargeAttack.png" alt="Overcharged Attack">
+                    <div class="modal_title_right">Overcharged Attack</div>
+                </div>
+            </div>   
+        </div>
+    </section>
+
+    <!-- Design Portfolio -->
+    <section class="section" id="design_porfolio">
+        <div class="section_container"> 
+            <div class="heading_container">
+                <h1 class="heading_text">Design Portfolio</h1>
+                <hr class="heading_underline">
+            </div>
+            <div class="extra_documents">
+                <div class="section_text">As part of this project I also created a design portfolio, explaining my process in more detail and documenting the prototype. This can be viewed below if interested.</div>
+                <div class="extra_documents_downloads">
+                    <a href="../Files/Documents/Melee Combat Prototype - Design Portfolio.pdf" class="button" target="_blank" id="document_buttons" target="_blank">Design Portfolio</a>
+                </div>  
+            </div>
+        </div>
+    </section>
+    
+    <div class="modal_popup" id="modal_popup">
+        <div class="modal_content_container">
+            <div class="modal_img_container">
+                <span class="modal_close_hidden">&times;</span>
+                <img class="modal_content" id="modal_img_popup" src="../Files/Images/1920x1080.png">
+                <span class="modal_close">&times;</span>
+            </div>
+            
+            <div id="modal_caption">Text Missing</div>
+        </div>
+    </div> 
+
+    <!-- Footer -->
+    <div class="footer_container">
+        <p class="footer_copyright">Liam Rickman | © <span id="copyright-year"></span> All rights reserved</p>
+    </div>
+
+    <!-- Javascript -->
+    <script src="../app.js"></script>
+</body>
+</html>

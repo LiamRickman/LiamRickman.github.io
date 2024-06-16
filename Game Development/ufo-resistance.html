@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="image/png" href="../Files\Images\favicon.png">
+    <link rel="stylesheet" href="../stylesheet-projects.css">
+    <script src="https://kit.fontawesome.com/96805f0250.js" crossorigin="anonymous"></script>
+    <title>LR | UFO Resistance</title>
+</head>
+
+<body>   
+    <!-- Navbar -->
+    <section class="home" id="home">
+        <nav class="navbar">
+            <div class="navbar_container">
+                <a href="index.html" id="navbar_logo">LR</a>
+                <ul class="navbar_menu">
+                    <li><a href="../index.html" class="navbar_links">Home</a></li>
+                    <li><a href="../game-development.html" class="navbar_links">Game Development</a></li>
+                    <li><a href="../programming.html" class="navbar_links">Programming</a></li>
+                    <li><a href="../index.html#about" class="navbar_links">About</a></li>
+                    <li><a href="../index.html#contact" class="navbar_links">Contact</a></li>
+                </ul>
+            </div>   
+        </nav>
+    </section>
+
+    <!-- Summary -->
+    <section class="section" id="summary">
+        <div class="section_container"> 
+            <div class="heading_container">
+                <h1 class="heading_text">UFO Resistance</h1>
+                <hr class="heading_underline">
+            </div>
+
+            <div class="summary_grid">
+                <div class="description">
+                    <p><span style="font-style: italic">UFO Resistance</span> is a tower defence game I created to explore data collection and analysis to improve the game through further development.
+                        <br><br>To get to data analysis quickly, I prototyped a basic project using some online tutorials. This gave the base game that I could expand on to improve the game over multiple iterations.
+                        <br><br>I ran various playtests with gradually more people, whilst gathering both quantitative and qualitative data through values gathered at the playtests, and feedback from participants left verbally and through forms.
+                        <br><br>By the end of the project, I believe I had successfully improved the game, making it a more balanced experience. I found that collecting data and running playtests were extremely helpful in improving game balance and feel.
+                    </p>
+                </div>
+
+                <div class="summary_line"></div>
+
+                <div> 
+                    <h1 class="about_heading">Development</h1>
+                    <p class="about_text">2021 - 2022 (Solo)</p>
+                    <h1 class="about_heading">Platform</h1>
+                    <p class="about_text">PC</p>
+                    <h1 class="about_heading">Software Used</h1>
+                    <p class="about_text"><a href="https://unity.com/releases/editor/whats-new/2019.4.19#installs" target="_blank" id="about_link">Unity 2019.4.19</a></p>
+                    <div class="about_buttons">
+                        <a href="https://1drv.ms/u/s!At8h6C5hjSPoi4FkqstM6bAS7FQb9g?e=BSq6Fl" class="button" id="about_buttons" target="_blank">Game Download</a>
+                        <a href="https://github.com/LiamRickman/UFO-Resistance" class="button" target="_blank">GitHub Repository</a>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!-- Iterations Video -->
+    <section class="section" id="iterations_video">
+        <div class="section_container"> 
+            <div class="heading_container">
+                <h1 class="heading_text">Iterations Video</h1>
+                <hr class="heading_underline">
+            </div>
+            <div class="gameplay_video">
+                <iframe class="youtube_video" src="https://www.youtube.com/embed/EpUJM3oI0Hg"> </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Turrets -->
+    <section class="section" id="project_report">
+        <div class="section_container"> 
+            <div class="heading_container">
+                <h1 class="heading_text">Turret Mechanics</h1>
+                <hr class="heading_underline">
+            </div>
+
+            <div class="modal_container"> 
+                <div class="modal_text">
+                    <p>As a tower defence game, the primary mechanic is buying turrets and placing them in optimal locations to defend the players base or objective from enemies.
+                        <br><br>There are three choices for turret:
+                        <br><br>
+                        <ul class="bullet_list">
+                            <li class="bullet_list_item">Standard: Basic turret that fires bullets at the closest/first target it finds.</li>
+                            <li class="bullet_list_item">Laser: Damage over time turret that also slows enemies.</li>
+                            <li class="bullet_list_item">Rocket: Slow firing explosive turret that deals damage to multiple enemies.</li>
+                        </ul>
+                    </p>
+                </div>
+                <div id="modal1">
+                    <img id="modal_img" src="../Files/Images/Game Development/UFO-Resistance/Buying.png" alt="Buying Turrets">
+                    <div class="modal_title_right">Buying Turrets</div>
+                </div>
+            </div>   
+
+            <div class="modal_container"> 
+                <div id="modal2">
+                    <img id="modal_img" src="../Files/Images/Game Development/UFO-Resistance/Upgrading.png" alt="Upgrading Turrets">
+                    <div class="modal_title_left">Upgrading Turrets</div>
+                </div>
+
+                <div class="modal_text">
+                    <p>Players can also upgrade turrets to give them boosted stats or different properties. This can include increased damage, range, firerate, or even special abilities such as rapid fire or AOE effects.
+                        <br><br>Originally upgrading used the same currency as buying, however after data analysis I realised they weren’t being utilised as much as I hoped. I added upgrade tokens to encourage players to upgrade turrets instead which had a positive impact.
+                        <br><br>A lot of the iterative development came through balancing these turrets. To start with players used lots of basic turrets and rarely used the laser turret. I adjusted the stats of all three turrets over different iterations which resulted in more variety being used.
+                    </p>
+                </div>
+            </div>   
+        </div>
+    </section>
+
+    <!-- Levels -->
+    <section class="section" id="project_report">
+        <div class="section_container"> 
+            <div class="heading_container">
+                <h1 class="heading_text">Level Design</h1>
+                <hr class="heading_underline">
+            </div>
+
+            <div class="full_text">
+                <p>While only a prototype project, I wanted to include a variety of level layouts so I could also analyse level related data. This would let me learn how the layout impacted difficulty or turret effectiveness. 
+                <br><br>This also gave players enough variation and lessen repetition, letting them play for longer and giving me more data to analyse.
+                <br><br>Level data was particularly interesting as I learnt that some layouts proved more challenging than others which worked for later layouts as I intended to increase the difficulty as the player progressed through the game.
+                <br><br>I also created at tutorial level which introduces the player to all the mechanics and enemy types.
+                </p>
+            </div>
+
+            <div class="modal_container">
+                <div id="modal3">
+                    <img id="modal_img" src="../Files/Images/Game Development/UFO-Resistance/LevelSelect.png" alt="Level Select">
+                    <div class="modal_title_left">Level Select</div>
+                </div>
+                <div id="modal4">
+                    <img id="modal_img" src="../Files/Images/Game Development/UFO-Resistance/LevelComplete.png" alt="Level Complete">
+                    <div class="modal_title_right">Level Complete</div>
+                </div>
+            </div>   
+
+            <div class="slideshow_container" id="slideshow1">
+                <div class="slide">
+                    <img src="../Files/Images/Game Development/UFO-Resistance/Level1.png" id="slide_img">
+                    <div class="slide_title">Level 1</div>
+                    <div class="slide_number">1 / 5</div>
+                </div>
+                <div class="slide">
+                    <img src="../Files/Images/Game Development/UFO-Resistance/Level2.png" id="slide_img">
+                    <div class="slide_title">Level 2</div>
+                    <div class="slide_number">2 / 5</div>
+                </div>
+                <div class="slide">
+                    <img src="../Files/Images/Game Development/UFO-Resistance/Level3.png" id="slide_img">
+                    <div class="slide_title">Level 3</div>
+                    <div class="slide_number">3 / 5</div>
+                </div>
+                <div class="slide">
+                    <img src="../Files/Images/Game Development/UFO-Resistance/Level4.png" id="slide_img">
+                    <div class="slide_title">Level 4</div>
+                    <div class="slide_number">4 / 5</div>
+                </div>
+                <div class="slide">
+                    <img src="../Files/Images/Game Development/UFO-Resistance/Level5.png" id="slide_img">
+                    <div class="slide_title">Level 5</div>
+                    <div class="slide_number">5 / 5</div>
+                </div>
+
+                <a class="slideshow_prev" onclick="moveSlides(-1)">&#10094;</a>
+                <a class="slideshow_next" onclick="moveSlides(1)">&#10095;</a>
+        </div>
+    </section>
+
+        <!-- Data Driven Design -->
+        <section class="section" id="project_report">
+            <div class="section_container"> 
+                <div class="heading_container">
+                    <h1 class="heading_text">Data Driven Design</h1>
+                    <hr class="heading_underline">
+                </div>
+
+                <div class="modal_container"> 
+                    <div class="modal_text">
+                        <p class="full_heading">Webhook Data</p>
+                        <p>I had intended to use the built in Unity Analytics dashboard to collect quantitative data, however I found it too slow and unreliable, and difficult to distinguish between builds.
+                            <br><br>As an alternative, I created a webhook script that would gather data and send it to an outside source. I used discord as this let me separate it into channels and be notified when new data arrived.
+                            <br><br>This didn’t create graphs automatically like Unity Analytics; however, this gave me more control and I created my own using Microsoft Excel. Eventually I also added csv functionality to the script so I could streamline the graph creation.
+                            <br><br>The data and analysis can be seen in my project report linked below. There is also a link to my webhook script I used to collect data.
+                        </p>
+                        <a href="../Files/Documents/UFO Resistance - Project Report.pdf" class="button" target="_blank" >Project Report</a>
+                        <a href="https://pastebin.com/BCTBZajK" class="button" target="_blank" id="document_buttons">Discord Webhook</a>
+                     
+                    </div>
+                    <div id="modal5">
+                        <img id="modal_img" src="../Files/Images/Game Development/UFO-Resistance/Webhook_Data.png" alt="Webhook Data">
+                        <div class="modal_title_left">Webhook Data</div>
+                    </div>
+                </div>  
+
+                <div class="full_text">
+                    <p class="full_heading">Heatmaps</p>
+                    <p>To learn more about the levels, I used a heatmap script to find problem areas. I used it for both enemy deaths and turret placements which provided useful information to find chokepoints or strategies players were using.
+                    </p>
+                </div>
+
+                <div class="modal_container">
+                    <div id="modal6">
+                        <img id="modal_img" src="../Files/Images/Game Development/UFO-Resistance/Heatmat_Enemies.png" alt="Heatmap - Enemy Deaths">
+                        <div class="modal_title_left">Heatmap - Enemy Deaths</div>
+                    </div>
+                    <div id="modal7">
+                        <img id="modal_img" src="../Files/Images/Game Development/UFO-Resistance/Heatmap_Turrets.png" alt="Heatmap - Turret Placement">
+                        <div class="modal_title_right">Heatmap - Turret Placement</div>
+                    </div>
+                </div>   
+
+                <div class="full_text">
+                    <p class="full_heading">Feedback Forms</p>
+                    <p>Finally, I asked participants to fill out a feedback form each play session to gather their feedback on the current build. This let me get their thoughts on the game, whether they found it fun or if anything felt unbalanced and annoying. 
+                    <br><br>If I was able to watch players, I took notes on their verbal feedback at the time and also used it to improve the game.  
+                    </p>
+                </div>
+                <img id="full_img" src="../Files/Images/Game Development/UFO-Resistance/Feedback_Form.png" alt="Feedback Form">
+            <div class="full_img_title">Feedback Form</div>
+            </div>
+        </section>
+    
+    <div class="modal_popup" id="modal_popup">
+        <div class="modal_content_container">
+            <div class="modal_img_container">
+                <span class="modal_close_hidden">&times;</span>
+                <img class="modal_content" id="modal_img_popup" src="../Files/Images/1920x1080.png">
+                <span class="modal_close">&times;</span>
+            </div>
+            
+            <div id="modal_caption">Text Missing</div>
+        </div>
+    </div> 
+
+    <!-- Footer -->
+    <div class="footer_container">
+        <p class="footer_copyright">Liam Rickman | © <span id="copyright-year"></span> All rights reserved</p>
+    </div>
+
+    <!-- Javascript -->
+    <script src="../app.js"></script>
+</body>
+</html>

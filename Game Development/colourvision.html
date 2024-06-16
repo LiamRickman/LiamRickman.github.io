@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="image/png" href="../Files\Images\favicon.png">
+    <link rel="stylesheet" href="../stylesheet-projects.css">
+    <script src="https://kit.fontawesome.com/96805f0250.js" crossorigin="anonymous"></script>
+    <title>LR | ColourVision</title>
+</head>
+
+<body>   
+    <!-- Navbar -->
+    <section class="home" id="home">
+        <nav class="navbar">
+            <div class="navbar_container">
+                <a href="index.html" id="navbar_logo">LR</a>
+                <ul class="navbar_menu">
+                    <li><a href="../index.html" class="navbar_links">Home</a></li>
+                    <li><a href="../game-development.html" class="navbar_links">Game Development</a></li>
+                    <li><a href="../programming.html" class="navbar_links">Programming</a></li>
+                    <li><a href="../index.html#about" class="navbar_links">About</a></li>
+                    <li><a href="../index.html#contact" class="navbar_links">Contact</a></li>
+                </ul>
+            </div>   
+        </nav>
+    </section>
+
+    <!-- Summary -->
+    <section class="section" id="summary">
+        <div class="section_container"> 
+            <div class="heading_container">
+                <h1 class="heading_text">ColourVision</h1>
+                <hr class="heading_underline">
+            </div>
+
+            <div class="summary_grid">
+                <div class="description">
+                    <p><span style="font-style: italic">ColourVision</span> is a vertical slice for a 2D isometric dungeon crawler where a lizard wizard has stolen all the colour from the world leaving it in greyscale.
+                        <br><br>The player's goal is to bring back the colour to the world by defeating the lizard wizards minions, and eventually the wizard himself.
+                        <br><br>As Lead Programmer, I was in charge of most game programming using Unity and C# to implement our intended mechanics and gameplay.
+                        <br><br>I also worked on some level design, primarily in engine to adjust for limitations and our gameplay.
+                    </p>
+                </div>
+
+                <div class="summary_line"></div>
+
+                <div> 
+                    <h1 class="about_heading">Development</h1>
+                    <p class="about_text">2021 (Team: 7)</p>
+                    <h1 class="about_heading">Platform</h1>
+                    <p class="about_text">PC</p>
+                    <h1 class="about_heading">Software Used</h1>
+                    <p class="about_text"><a href="https://unity.com/releases/editor/whats-new/2019.4.19#installs" target="_blank" id="about_link">Unity 2019.4.19</a></p>
+                    <div class="about_buttons">
+                        <a href="https://1drv.ms/u/s!At8h6C5hjSPoi4FjUrwHlcaAuKX_cg?e=o0oe7F" class="button" id="about_buttons" target="_blank">Game Download</a>
+                        <a href="https://github.com/LiamRickman/ColourVision" class="button" target="_blank">GitHub Repository</a>
+                    </div>
+                </div>
+            </div>
+    </section>
+    
+    <!-- Gameplay Video -->
+    <section class="section" id="gameplay_video">
+        <div class="section_container"> 
+            <div class="heading_container">
+                <h1 class="heading_text">Gameplay Video</h1>
+                <hr class="heading_underline">
+            </div>
+            <div class="gameplay_video">
+                <iframe class="youtube_video" src="https://www.youtube.com/embed/ueExncPHV6o"> </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Player Mechanics -->
+    <section class="section">
+        <div class="section_container"> 
+            <div class="heading_container">
+                <h1 class="heading_text">Player Mechanics</h1>
+                <hr class="heading_underline">
+            </div>
+
+            <div class="full_text">
+                <p>I first worked on the player movement. The movement is similar to most 2D games, however, was adjusted to work with the isometric viewpoint. 
+                <br><br>I also added a dash action which lets the player dodge attacks and add more skill expression to the game. This has a cooldown to avoid abusing the mechanic. 
+                <br><br>Players main attack uses a baseball bat. This works by checking an area around the player and applying damage whenever the bat is swung.
+                </p>
+            </div>
+            
+            <div class="gameplay_video">
+                <iframe class="youtube_video" src="https://www.youtube.com/embed/-3FXo8Rzi1Y"> </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Enemy Mechanics -->
+    <section class="section">
+        <div class="section_container"> 
+            <div class="heading_container">
+                <h1 class="heading_text">Enemies</h1>
+                <hr class="heading_underline">
+            </div>
+
+            <div class="full_text">
+                <p>There are three enemy types in ColourVision. Melee, Ranged, and Flying. The melee enemy patrols between points and will attack the player if they get close. 
+                <br><br>The ranged enemy does not move, and will shoot at the player if they get in range.
+                <br><br>Finally, the flying enemy starts inactive, but will chase after the player if they get close enough to trigger the enemy. 
+                </p>
+            </div>
+            
+            <div class="gameplay_video">
+                <iframe class="youtube_video" src="https://www.youtube.com/embed/LYxxGBxznIw"> </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Boss Mechanics -->
+    <section class="section">
+        <div class="section_container"> 
+            <div class="heading_container">
+                <h1 class="heading_text">Boss Fight Mechanics</h1>
+                <hr class="heading_underline">
+            </div>
+
+            <div class="full_text">
+                <p>Despite being a vertical slice, we decided to create the final boss fight to show the full intended gameplay loop. This boss has three different attack stages which it will switch between randomly.
+                <br><br>The first is a shockwave attack, where the boss slams the ground firing many projectiles in a circle.
+                <br><br>Then there is a ranged attack, similar to the ranged enemy, however the player can use their baseball bat to deflect these at the boss to deal damage.
+                <br><br>Finally, there is a pigment stage where the boss disappears, spawning a wave of enemies for the player to fight instead.
+                </p>
+            </div>
+            
+            <div class="gameplay_video">
+                <iframe class="youtube_video" src="https://www.youtube.com/embed/v8M9kfcCJOA"> </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Report -->
+    <section class="section" id="project_report">
+        <div class="section_container"> 
+            <div class="heading_container">
+                <h1 class="heading_text">Project Portfolio</h1>
+                <hr class="heading_underline">
+            </div>
+            <div class="extra_documents">
+                <div class="section_text">I also worked on other mechanics that supported the main gameplay. A full breakdown of my work can be seen in my project portfolio which is linked below. This includes code samples and further explanations.</div>
+                <div class="extra_documents_downloads">
+                    <a href="../Files/Documents/ColourVision - Portfolio.pdf" class="button" target="_blank" id="document_buttons" target="_blank">Project Portfolio</a>
+                </div>  
+            </div>
+        </div>
+    </section>
+
+    <div class="modal_popup" id="modal_popup">
+        <div class="modal_content_container">
+            <div class="modal_img_container">
+                <span class="modal_close_hidden">&times;</span>
+                <img class="modal_content" id="modal_img_popup" src="../Files/Images/1920x1080.png">
+                <span class="modal_close">&times;</span>
+            </div>
+            
+            <div id="modal_caption">Text Missing</div>
+        </div>
+    </div> 
+
+    <!-- Footer -->
+    <div class="footer_container">
+        <p class="footer_copyright">Liam Rickman | © <span id="copyright-year"></span> All rights reserved</p>
+    </div>
+
+    <!-- Javascript -->
+    <script src="../app.js"></script>
+</body>
+</html>

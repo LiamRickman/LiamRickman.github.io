@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="image/png" href="../Files\Images\favicon.png">
+    <link rel="stylesheet" href="../stylesheet-projects.css">
+    <script src="https://kit.fontawesome.com/96805f0250.js" crossorigin="anonymous"></script>
+    <title>LR | The Lost Ark</title>
+</head>
+
+<body>   
+    <!-- Navbar -->
+    <section class="home" id="home">
+        <nav class="navbar">
+            <div class="navbar_container">
+                <a href="index.html" id="navbar_logo">LR</a>
+                <ul class="navbar_menu">
+                    <li><a href="../index.html" class="navbar_links">Home</a></li>
+                    <li><a href="../game-development.html" class="navbar_links">Game Development</a></li>
+                    <li><a href="../programming.html" class="navbar_links">Programming</a></li>
+                    <li><a href="../index.html#about" class="navbar_links">About</a></li>
+                    <li><a href="../index.html#contact" class="navbar_links">Contact</a></li>
+                </ul>
+            </div>   
+        </nav>
+    </section>
+
+    <!-- Summary -->
+    <section class="section" id="summary">
+        <div class="section_container"> 
+            <div class="heading_container">
+                <h1 class="heading_text">The Lost Ark</h1>
+                <hr class="heading_underline">
+            </div>
+
+            <div class="summary_grid">
+                <div class="description">
+                    <p><span style="font-style: italic">The Lost Ark</span> is a level design project inspired by Indiana Jones and the Raiders of the Lost Ark. I followed the introduction scene where Indiana Jones explores and escapes a temple avoiding various traps and obstacles.
+                        <br><br>For this project I completed research into level design techniques that were used in initial concepts, pre-production and implementation stages of development.
+                        <br><br>The final prototype was iterated on multiple times in Unreal Engine using the blueprint system. It includes a rope swing, light traps, swinging logs, floor puzzles, and a boulder that chases the player. 
+                    </p>
+                </div>
+
+                <div class="summary_line"></div>
+
+                <div> 
+                    <h1 class="about_heading">Development</h1>
+                    <p class="about_text">2020 (Solo)</p>
+                    <h1 class="about_heading">Platform</h1>
+                    <p class="about_text">PC</p>
+                    <h1 class="about_heading">Software Used</h1>
+                    <p class="about_text"><a href="https://www.unrealengine.com/en-US/unreal-engine-4" target="_blank" id="about_link">Unreal Engine 4</a></p>
+                    <div class="about_buttons">
+                        <a href="https://1drv.ms/u/s!At8h6C5hjSPoi4FlQGoMn2rh8nVbfQ?e=NCrkf7" class="button" id="about_buttons" target="_blank">Game Download</a>
+                        <a href="https://github.com/LiamRickman/The-Lost-Ark" class="button" target="_blank">GitHub Repository</a>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    
+    <!-- YouTube Video -->
+    <section class="section" id="youtube">
+        <div class="section_container"> 
+            <div class="heading_container">
+                <h1 class="heading_text">Level Walkthrough</h1>
+                <hr class="heading_underline">
+            </div>
+
+            <div class="gameplay_video">
+                <iframe class="youtube_video" src="https://www.youtube.com/embed/-lKzjXON67g"> </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pre-Production -->
+    <section class="section" id="interactions">
+        <div class="section_container"> 
+            <div class="heading_container">
+                <h1 class="heading_text">Pre-Production</h1>
+                <hr class="heading_underline">
+            </div>
+
+            <div class="full_text">
+                <p>In the pre-production stage, I worked on a more film accurate design. While this would likely need adapting to better suit gameplay, it allowed me to break down the traps featured which can be used in later designs
+                </p>
+            </div>
+
+            <div class="slideshow_container" id="slideshow1">
+                <div class="slide">
+                    <img src="../Files/Images/Game Development/The-Lost-Ark/CobwebTunnels_PreProd.png" id="slide_img">
+                    <div class="slide_title">Cobweb Tunnels</div>
+                    <div class="slide_number">1 / 6</div>
+                </div>
+                <div class="slide">
+                    <img src="../Files/Images/Game Development/The-Lost-Ark/BoulderDrop_PreProd.png" id="slide_img">
+                    <div class="slide_title">Boulder Drop</div>
+                    <div class="slide_number">2 / 6</div>
+                </div>
+                <div class="slide">
+                    <img src="../Files/Images/Game Development/The-Lost-Ark/LightTrap_PreProd.png" id="slide_img">
+                    <div class="slide_title">Light Traps</div>
+                    <div class="slide_number">3 / 6</div>
+                </div>
+                <div class="slide">
+                    <img src="../Files/Images/Game Development/The-Lost-Ark/RopeSwing_PreProd.png" id="slide_img">
+                    <div class="slide_title">Rope Swing</div>
+                    <div class="slide_number">4 / 6</div>
+                </div>
+                <div class="slide">
+                    <img src="../Files/Images/Game Development/The-Lost-Ark/FloorPuzzle_PreProd.png" id="slide_img">
+                    <div class="slide_title">Floor Puzzle</div>
+                    <div class="slide_number">5 / 6</div>
+                </div>
+                <div class="slide">
+                    <img src="../Files/Images/Game Development/The-Lost-Ark/IdolRoom_PreProd.png" id="slide_img">
+                    <div class="slide_title">Idol Room</div>
+                    <div class="slide_number">6 / 6</div>
+                </div>
+
+                <a class="slideshow_prev" onclick="moveSlides(-1)">&#10094;</a>
+                <a class="slideshow_next" onclick="moveSlides(1)">&#10095;</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Levels -->
+    <section class="section" id="project_report">
+        <div class="section_container"> 
+            <div class="heading_container">
+                <h1 class="heading_text">Mechanics Development</h1>
+                <hr class="heading_underline">
+            </div>
+
+            <div class="full_text">
+                <p>After seperating what traps I would need to create, I began developing them in a seperate level in Unreal Engine. This allowed me to test the traps in a clean environment and figure out any limitations or impacts they may have on the level design. 
+                </p>
+            </div>
+
+            <div class="modal_container">
+                <div id="modal1">
+                    <img id="modal_img" src="../Files/Images/Game Development/The-Lost-Ark/MechanicsV1.png" alt="Mechanics Development Level (1)">
+                    <div class="modal_title_left">Mechanics Development Level (1)</div>
+                </div>
+                <div id="modal2">
+                    <img id="modal_img" src="../Files/Images/Game Development/The-Lost-Ark/MechanicsV2.png" alt="Mechanics Development Level (2)">
+                    <div class="modal_title_right">Mechanics Development Level (2)</div>
+                </div>
+            </div>   
+        </div>
+    </section>
+   
+    <!-- Level Design Iteration -->
+    <section class="section" id="interactions">
+        <div class="section_container"> 
+            <div class="heading_container">
+                <h1 class="heading_text">Level Design Iteration</h1>
+                <hr class="heading_underline">
+            </div>
+
+            <div class="full_text">
+                <p>The level was implemented in Unreal Engine and was iterated on many times with different variations of the traps and layouts trying to make it feel more natural and cohesive. 
+                </p>
+            </div>
+
+            <div class="slideshow_container" id="slideshow2">
+                <div class="slide">
+                    <img src="../Files/Images/Game Development/The-Lost-Ark/LayoutV2.0.png" id="slide_img">
+                    <div class="slide_title">Level Layout v2.0</div>
+                    <div class="slide_number">1 / 6</div>
+                </div>
+                <div class="slide">
+                    <img src="../Files/Images/Game Development/The-Lost-Ark/LayoutV2.1.png" id="slide_img">
+                    <div class="slide_title">Level Layout v2.1</div>
+                    <div class="slide_number">2 / 6</div>
+                </div>
+                <div class="slide">
+                    <img src="../Files/Images/Game Development/The-Lost-Ark/LayoutV3.0-1.png" id="slide_img">
+                    <div class="slide_title">Level Layout v3.0 (1)</div>
+                    <div class="slide_number">3 / 6</div>
+                </div>
+                <div class="slide">
+                    <img src="../Files/Images/Game Development/The-Lost-Ark/LayoutV3.0-2.png" id="slide_img">
+                    <div class="slide_title">Level Layout v3.0 (2)</div>
+                    <div class="slide_number">4 / 6</div>
+                </div>
+                <div class="slide">
+                    <img src="../Files/Images/Game Development/The-Lost-Ark/LayoutV4.0-1.png" id="slide_img">
+                    <div class="slide_title">Level Layout v4.0 (1)</div>
+                    <div class="slide_number">5 / 6</div>
+                </div>
+                <div class="slide">
+                    <img src="../Files/Images/Game Development/The-Lost-Ark/LayoutV4.0-2.png" id="slide_img">
+                    <div class="slide_title">Level Layout v4.0 (2)</div>
+                    <div class="slide_number">6 / 6</div>
+                </div>
+
+                <a class="slideshow_prev" onclick="moveSlides(-1)">&#10094;</a>
+                <a class="slideshow_next" onclick="moveSlides(1)">&#10095;</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final Renders -->
+    <section class="section">
+        <div class="section_container"> 
+            <div class="heading_container">
+                <h1 class="heading_text">Final Renders</h1>
+                <hr class="heading_underline">
+            </div>
+
+            <div class="full_text">
+                <p>The level was implemented in Unreal Engine and was iterated on many times with different variations of the traps and layouts trying to make it feel more natural and cohesive. 
+                </p>
+            </div>
+
+            <div class="slideshow_container" id="slideshow3">
+                <div class="slide">
+                    <img src="../Files/Images/Game Development/The-Lost-Ark/Render_TempleEntrance.png" id="slide_img">
+                    <div class="slide_title">Temple Entrance</div>
+                    <div class="slide_number">1 / 6</div>
+                </div>
+                <div class="slide">
+                    <img src="../Files/Images/Game Development/The-Lost-Ark/Render_Tutorial.png" id="slide_img">
+                    <div class="slide_title">Tutorial</div>
+                    <div class="slide_number">2 / 6</div>
+                </div>
+                <div class="slide">
+                    <img src="../Files/Images/Game Development/The-Lost-Ark/Render_LightTrap.png" id="slide_img">
+                    <div class="slide_title">Light Traps</div>
+                    <div class="slide_number">3 / 6</div>
+                </div>
+                <div class="slide">
+                    <img src="../Files/Images/Game Development/The-Lost-Ark/Render_RopeSwing.png" id="slide_img">
+                    <div class="slide_title">Rope Swing</div>
+                    <div class="slide_number">4 / 6</div>
+                </div>
+                <div class="slide">
+                    <img src="../Files/Images/Game Development/The-Lost-Ark/Render_SwingingLogs.png" id="slide_img">
+                    <div class="slide_title">Swinging Logs</div>
+                    <div class="slide_number">5 / 6</div>
+                </div>
+                <div class="slide">
+                    <img src="../Files/Images/Game Development/The-Lost-Ark/Render_FloorPuzzle.png" id="slide_img">
+                    <div class="slide_title">Floor Puzzle</div>
+                    <div class="slide_number">6 / 6</div>
+                </div>
+
+                <a class="slideshow_prev" onclick="moveSlides(-1)">&#10094;</a>
+                <a class="slideshow_next" onclick="moveSlides(1)">&#10095;</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Report -->
+    <section class="section" id="project_report">
+        <div class="section_container"> 
+            <div class="heading_container">
+                <h1 class="heading_text">Project Portfolio</h1>
+                <hr class="heading_underline">
+            </div>
+            <div class="extra_documents">
+                <div class="section_text">My full portfolio for this project can be viewed below. This further breaks down my design and iterations of the level. This also includes some code samples of the blueprint code in Unreal Engine.</div>
+                <div class="extra_documents_downloads">
+                    <a href="../Files/Documents/The Lost Ark - Portfolio.pdf" class="button" target="_blank" id="document_buttons" target="_blank">Project Portfolio</a>
+                </div>  
+            </div>
+        </div>
+    </section>
+
+    <div class="modal_popup" id="modal_popup">
+        <div class="modal_content_container">
+            <div class="modal_img_container">
+                <span class="modal_close_hidden">&times;</span>
+                <img class="modal_content" id="modal_img_popup" src="../Files/Images/1920x1080.png">
+                <span class="modal_close">&times;</span>
+            </div>
+            
+            <div id="modal_caption">Text Missing</div>
+        </div>
+    </div> 
+
+    <!-- Footer -->
+    <div class="footer_container">
+        <p class="footer_copyright">Liam Rickman | © <span id="copyright-year"></span> All rights reserved</p>
+    </div>
+
+    <!-- Javascript -->
+    <script src="../app.js"></script>
+</body>
+</html>

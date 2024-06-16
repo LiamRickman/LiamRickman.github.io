@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="image/png" href="../Files\Images\favicon.png">
+    <link rel="stylesheet" href="../stylesheet-projects.css">
+    <script src="https://kit.fontawesome.com/96805f0250.js" crossorigin="anonymous"></script>
+    <title>LR | Replayable Looter Shooter</title>
+</head>
+
+<body>   
+    <!-- Navbar -->
+    <section class="home" id="home">
+        <nav class="navbar">
+            <div class="navbar_container">
+                <a href="index.html" id="navbar_logo">LR</a>
+                <ul class="navbar_menu">
+                    <li><a href="../index.html" class="navbar_links">Home</a></li>
+                    <li><a href="../game-development.html" class="navbar_links">Game Development</a></li>
+                    <li><a href="../programming.html" class="navbar_links">Programming</a></li>
+                    <li><a href="../index.html#about" class="navbar_links">About</a></li>
+                    <li><a href="../index.html#contact" class="navbar_links">Contact</a></li>
+                </ul>
+            </div>   
+        </nav>
+    </section>
+
+    <!-- Summary -->
+    <section class="section" id="summary">
+        <div class="section_container"> 
+            <div class="heading_container">
+                <h1 class="heading_text">Replayable Looter Shooter</h1>
+                <hr class="heading_underline">
+            </div>
+
+            <div class="summary_grid">
+                <div class="description">
+                    <p><span style="font-style: italic">Replayable Looter Shooter</span> is a prototype for a first-person shooter focusing on replayability through mechanics and gameplay design.
+                        <br><br>Replayability is an important feature in choosing which games I play, as I often play them for months or even years. <a href="https://store.steampowered.com/app/548430/Deep_Rock_Galactic/" class="inline_link">Deep Rock Galactic</a> and <a href="https://store.steampowered.com/app/632360/Risk_of_Rain_2/" class="inline_link">Risk of Rain 2</a> are two standout games that inspired me to learn more about replayability and how I can implement such features in my own games.
+                        <br><br>My aim for this prototype was to create the core loop and one complete mission type. I primarily explored gameplay and mechanics through design and implementation, however I also investigated other areas as required.
+                        <br><br>The final prototype includes mechanic such as a loadout system with structured unlocks, procedural level generation for alternative maps, and self-driven player goals.
+                    </p>
+                </div>
+
+                <div class="summary_line"></div>
+
+                <div> 
+                    <h1 class="about_heading">Development</h1>
+                    <p class="about_text">2022 - 2023 (Solo)</p>
+                    <h1 class="about_heading">Platform</h1>
+                    <p class="about_text">PC</p>
+                    <h1 class="about_heading">Software Used</h1>
+                    <p class="about_text"><a href="https://www.unrealengine.com/en-US/unreal-engine-5" target="_blank" id="about_link">Unreal Engine 5</a>, <a href="https://www.blender.org/download/releases/3-5/"target="_blank" id="about_link">Blender 3.5</a></p>
+                    <div class="about_buttons">
+                        <a href="https://liamrickman.itch.io/replayable-looter-shooter" class="button" id="about_buttons" target="_blank">Game Download</a>
+                        <a href="https://github.com/LiamRickman/Replayable-Looter-Shooter" class="button" target="_blank">GitHub Repository</a>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!-- Gameplay Trailer -->
+    <section class="section" id="youtube">
+        <div class="section_container"> 
+            <div class="heading_container">
+                <h1 class="heading_text">Gameplay Trailer</h1>
+                <hr class="heading_underline">
+            </div>
+
+            <div class="gameplay_video">
+                <iframe class="youtube_video" src="https://www.youtube.com/embed/ypuBRy1PqSY"> </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Player Motivation -->
+    <section class="section" id="textandimage">
+        <div class="section_container"> 
+            <div class="heading_container">
+                <h1 class="heading_text">Player Motivation</h1>
+                <hr class="heading_underline">
+            </div>
+
+            <div class="modal_container"> 
+                <div class="modal_text">
+                    <p class="sub_heading">Loadout System</p>
+                    <p>I found a large impact on replayability came through the loadout system. This used motivation and player goals to drive players to continue playing by providing them reasons to do so.
+                        <br><br>The loadout system allows players to customise their loadouts to fit their preferred playstyles, as well as try out alternative playstyles with different weapons or equipment.
+                        <br><br>Some weapons and equipment are locked initially and require the player to play the game and unlock them over time. This worked well to allow players to set their own goals and something to work towards. 
+                    </p>
+                </div>
+
+                <div id="modal1">
+                    <img id="modal_img" src="../Files/Images/Game Development/Replayable-Looter-Shooter/Loadout-Main.png" alt="Loadout selection">
+                    <div class="modal_title_right">Loadout selection</div>
+                </div>
+            </div>
+
+            <div class="modal_container"> 
+                <div id="modal2">
+                    <img id="modal_img" src="../Files/Images/Game Development/Replayable-Looter-Shooter/Loadout-Unlock.png" alt="Unlocking new weapons">
+                    <div class="modal_title_left">Unlocking new weapons</div>
+                </div>
+
+                <div class="modal_text">
+                    <p>These goals are not forced or in any specific order, allowing players to unlock the items they want, or skip items they do not want to unlock.
+                        <br><br>There are two currencies to unlock new equipment. The first is credits, which the player earns from completing missions and defeating enemies. Then there are level completion unlocks, which require the player to play a certain amount of missions before unlocking a weapon.
+                        <br><br>One further improvement I would have liked to add to this system would include upgrades to further alter the weapons functionality and characteristics, however this was out of scope for the project.
+                    </p>
+                </div>
+            </div>  
+
+            <div class="gameplay_video">
+                <iframe class="youtube_video" src="https://www.youtube.com/embed/d7_ne2Ui7iM"> </iframe>
+                <div class="full_img_title">Loadout showcase</div>
+            </div>
+            
+            <div class="modal_container"> 
+                <div class="modal_text">
+                    <p class="sub_heading">Short-Term Goals</p>
+                    <p>While long-term goals such as unlocking weapons are good for replayability, it was important to give the player short-term goals to keep them engaged in the moment.
+                        <br><br>Killing enemies comes naturally as they pose a threat, and players often need to defeat them to survive and complete the mission. While they are fairly basic in this prototype, they still help the players see improvement over time, boosting replayability.
+                        <br><br>Players are rewarded with credits for killing enemies, which provides immediate positive reinforcement and reward for the players.
+                    </p>
+                </div>
+
+                <div id="modal3">
+                    <img id="modal_img" src="../Files/Images/Game Development/Replayable-Looter-Shooter/Combat.png" alt="Combat with enemies">
+                    <div class="modal_title_right">Combat with enemies</div>
+                </div>
+            </div>
+
+            <div class="modal_container"> 
+                <div id="modal4">
+                    <img id="modal_img" src="../Files/Images/Game Development/Replayable-Looter-Shooter/Collecting-Loot.png" alt="Collecting loot">
+                    <div class="modal_title_left">Collecting loot</div>
+                </div>
+
+                <div class="modal_text">
+                    <p>I also added loot caches throughout the mission which players can collect for bonus rewards. This rewards players for exploring their time spent exploring the level and visiting areas they may have otherwise ignored.
+                        <br><br>After playtests, I also added health and ammo pickups to these caches to give immediate value and help players with the increased time spent in a mission.
+                        <br><br>The increased exploration ultimately extended play sessions by providing motivated players with the tools and rewards to spend more time in game.
+                    </p>
+                </div>
+            </div>  
+        </div>
+    </section>
+
+    <!-- Missions & Game Loops -->
+    <section class="section" id="textandimage">
+        <div class="section_container"> 
+            <div class="heading_container">
+                <h1 class="heading_text">Missions & Game Loops</h1>
+                <hr class="heading_underline">
+            </div>
+            <div class="modal_container"> 
+                <div class="modal_text">
+                    <p class="sub_heading">Missions</p>
+                    <p>The mission I designed for the prototype is called Scavenge with the player being sent to a space station to gather valuable loot. 
+                        <br><br>It has six objectives, which are fairly open to allow for procedural level generation. This also worked well to give players autonomy and help them feel in control. Completing missions rewards the player with credits
+                        <br><br>Completing missions rewards the player with credits which they can spend on unlocks back on their ship.
+                    </p>
+                </div>
+
+                <div id="modal5">
+                    <img id="modal_img" src="../Files/Images/Game Development/Replayable-Looter-Shooter/Mission-Complete.png" alt="Mission complete">
+                    <div class="modal_title_right">Mission complete</div>
+                </div>
+            </div>
+
+            <div class="modal_container"> 
+                <div id="modal6">
+                    <img id="modal_img" src="../Files/Images/Game Development/Replayable-Looter-Shooter/Mission-Failed.png" alt="Mission failed">
+                    <div class="modal_title_left">Mission failed</div>
+                </div>
+
+                <div class="modal_text">
+                    <p class="sub_heading">Game Loops</p>
+                    <p>
+                        <br><br>The core loop focuses on the actions players take when entering a new room. This includes entering the room, defeating enemies, collecting loot, completing objectives, and leaving the room. 
+                        <br><br>Outside of missions, there is a larger gameplay loop which includes selecting loadouts, completing missions, earning credits, and purchasing new equipment. 
+                        <br><br>This larger loop can easily be completed in one play session which boosts replayability as players can experience most core gameplay features each time they play.
+                    </p>
+                </div>
+            </div>  
+        </div>
+    </section>
+
+    <!-- Randomness -->
+    <section class="section" id="textandimage">
+        <div class="section_container"> 
+            <div class="heading_container">
+                <h1 class="heading_text">Procedural Generation</h1>
+                <hr class="heading_underline">
+            </div>
+            <div class="modal_container"> 
+                <div class="modal_text">
+                    <p>Another factor that improved replayability was the usage of procedural generation in the level and mission design. This helped avoid gameplay feeling repetitive by seeing the same level over and over.
+                        <br><br>Another factor that improved replayability was the usage of procedural generation in the level and mission design. This helped avoid gameplay feeling repetitive by seeing the same level over and over.
+                        <br><br>This gave the player control over the size and difficulty of each mission depending on their desired challenge, and intended session length.
+                    </p>
+                </div>
+
+                <div id="modal7">
+                    <img id="modal_img" src="../Files/Images/Game Development/Replayable-Looter-Shooter/Mission-Select.png" alt="Mission selection">
+                    <div class="modal_title_right">Mission selection</div>
+                </div>
+            </div>
+
+            <div class="slideshow_container" id="slideshow1">
+                <div class="slide">
+                    <img src="../Files/Images/Game Development/Replayable-Looter-Shooter/procedural-generation-1.png" id="slide_img">
+                    <div class="slide_title">Procedural Generation (1)</div>
+                    <div class="slide_number">1 / 3</div>
+                </div>
+                <div class="slide">
+                    <img src="../Files/Images/Game Development/Replayable-Looter-Shooter/procedural-generation-2.png" id="slide_img">
+                    <div class="slide_title">Procedural Generation (2)</div>
+                    <div class="slide_number">2 / 3</div>
+                </div>
+                <div class="slide">                   
+                    <img src="../Files/Images/Game Development/Replayable-Looter-Shooter/procedural-generation-3.png" id="slide_img">
+                    <div class="slide_title">Procedural Generation (3)</div>
+                    <div class="slide_number">3 / 3</div>
+                </div>
+
+                <a class="slideshow_prev" onclick="moveSlides(-1)">&#10094;</a>
+                <a class="slideshow_next" onclick="moveSlides(1)">&#10095;</a>
+            </div>
+
+            <div class="gameplay_video">
+                <iframe class="youtube_video" src="https://www.youtube.com/embed/TGl4Po_3ick"> </iframe>
+                <div class="full_img_title">Procedural generation</div>
+            </div>
+
+            <div class="gameplay_video">
+                <iframe class="youtube_video" src="https://www.youtube.com/embed/4BP3bqcErSo"> </iframe>
+                <div class="full_img_title">Mission generation</div>
+            </div>
+
+
+        </div>
+    </section>
+    <!-- Project Report -->
+    <section class="section" id="project_report">
+        <div class="section_container"> 
+            <div class="heading_container">
+                <h1 class="heading_text">Project Report</h1>
+                <hr class="heading_underline">
+            </div>
+            <div class="extra_documents">
+                <div class="section_text">For further information and insight into how and why I developed this project, you can access my project report via the link below.</div>
+                <div class="extra_documents_downloads">
+                    <a href="../Files/Documents/Replayable Looter Shooter - Project Report.pdf" class="button" target="_blank" id="document_buttons" target="_blank">Project Report</a>
+                </div>
+                
+                
+            </div>
+        </div>
+    </section>
+    
+    <div class="modal_popup" id="modal_popup">
+        <div class="modal_content_container">
+            <div class="modal_img_container">
+                <span class="modal_close_hidden">&times;</span>
+                <img class="modal_content" id="modal_img_popup" src="../Files/Images/1920x1080.png">
+                <span class="modal_close">&times;</span>
+            </div>
+            
+            <div id="modal_caption">Text Missing</div>
+        </div>
+    </div> 
+
+    <!-- Footer -->
+    <div class="footer_container">
+        <p class="footer_copyright">Liam Rickman | © <span id="copyright-year"></span> All rights reserved</p>
+    </div>
+
+    <!-- Javascript -->
+    <script src="../app.js"></script>
+</body>
+</html>

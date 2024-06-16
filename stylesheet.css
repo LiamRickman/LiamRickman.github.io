@@ -1,0 +1,406 @@
+/* ----------------------------------- GENERAL CSS ----------------------------------- */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    color: var(--main-text);
+}
+
+:root {
+    --main-text: #fff;
+    --image-border: #000;
+    --background: #222;
+    --accent: #00875a;
+    --navbar: #111;
+}
+
+.button {
+    display: inline-block;
+    background: var(--accent);
+    color: var(--main-text);
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 14px 32px;
+    margin-top: 2rem;
+    border-radius: 0.5rem;
+    border: solid var(--accent);
+    transition: all 0.35s;
+    text-decoration: none;
+    text-align: center;
+}
+
+.button:hover {
+    color: var(--accent);
+    background: none;
+    scale: 1.00;
+}
+
+#particles-js
+{
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+
+
+/* ----------------------------------- NAVBAR CSS ----------------------------------- */
+
+.navbar {
+    background: var(--navbar);
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    border-bottom: 4px solid var(--accent);
+}
+
+.navbar_container {
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+#navbar_logo {
+    color: var(--accent);
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.navbar_menu {
+    list-style: none;
+    display: flex;
+    text-align: center;
+    width: auto;
+    white-space: nowrap;
+    align-items: center;
+}
+
+.navbar_links {
+    color: var(--main-text);
+    display: flex;
+    text-decoration: none;
+    padding: 1rem;
+    
+}
+
+.navbar_links:hover {
+    color: var(--accent);
+    transition: all 0.3s ease;
+}
+
+/* ----------------------------------- Footer CSS ----------------------------------- */
+.footer_container {
+    background: var(--navbar);
+    height: 60px;
+    border-top: 2px solid var(--accent);
+    padding-top: 20px;
+    
+}
+
+.footer_copyright {
+    color: var(--main-text);
+    font-size: 1rem;
+    text-align: center;
+}
+
+/* ----------------------------------- Section CSS -----------------------------------*/
+.section {
+    background: var(--background);
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    scroll-margin-top: 80px;
+}
+
+.section_text {
+    font-size: 1.2rem;
+    font-weight: 100;
+    padding-bottom: 25px;
+}
+
+.section_container {
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px;
+    height: auto;
+    margin-left: 100px;
+    margin-right: 100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.heading_container {
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 25px
+}
+
+.heading_text {
+    font-size: 2rem;
+
+}
+
+.heading_underline {
+    margin-top: 5px;
+    color: var(--accent);
+    border: 2px solid var(--accent);
+}
+
+/* ----------------------------------- Intro CSS ----------------------------------- */
+.intro_container {
+    width: 100%;
+    max-width: 1300px;
+    height: 100vh;
+    margin-left: 100px;
+    margin-right: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    position: absolute;
+}
+
+.intro_grid_section {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#intro_img {
+    width: 400px;
+    border: 4px solid var(--accent);
+    border-radius: 3rem;
+    margin-left: 25px;
+}
+
+.intro_text {
+    font-size: 2rem;
+    padding-bottom: 115px;
+}
+
+#intro_text_hello {
+    padding-bottom: 40px;
+}
+
+#intro_link_img {
+    width: 50px;
+    height: 50px;
+}
+
+.intro_link_text {
+    color: var(--main-text);
+    text-decoration: none;
+    scroll-margin-top: 80px;
+    padding-right: 50px;
+    font-size: 1.8rem;
+}
+
+.intro_link_text:hover {
+    color: var(--accent);
+    transition: all 0.3s ease;
+}
+
+
+
+/* ----------------------------------- About CSS ----------------------------------- */
+#about {
+    background: var(--background);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    border-top: 2px solid var(--accent);
+}
+
+.about_main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    align-items: center;
+}
+
+.about_text {
+    padding-top: 25px;
+}
+
+#about_buttons {
+    margin-right: 25px;
+}
+
+.about_skill_grid {
+    margin-left: auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    display: grid;
+    padding-left: 50px;
+}
+
+.about_skill {
+    padding: 25px;
+    text-align: center;
+}
+
+#skill_img {
+    width: 75px;
+}
+
+.skill_text {
+    font-size: 1.2rem;
+    padding-top: 5px;
+    
+}
+
+#skill_link {
+    text-decoration: none;
+}
+
+
+/* ----------------------------------- Experience & Education CSS ----------------------------------- */
+.role_main {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    align-items: center; 
+}
+
+#role_seperator {
+    padding-top: 50px;
+}
+
+#role_img {
+    width: 250px;
+    height: 250px;
+    margin-left: 25px;
+}
+
+.role_left {
+    margin-left: 0px;
+    margin-right: auto;
+}
+
+.role_right {
+    margin-left: auto;
+    margin-right: 0px;
+    
+}
+
+.role_text {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: var(--accent);
+    font-size: 1.6rem;
+}
+
+.date_text {
+    padding-bottom: 20px;
+    font-size: 1.3rem;
+}
+
+/* ----------------------------------- Contact CSS ----------------------------------- */
+.contact_main {
+    text-align: center;
+    padding-top: 10px;
+}
+
+.contact_links {
+    padding-top: 35px;
+}
+
+.contact_link_text {
+    color: var(--main-text);
+    text-decoration: none;
+    padding-right: 50px;
+    font-size: 1.5rem;
+}
+
+.contact_link_text:hover {
+    color: var(--accent);
+    transition: all 0.3s ease;
+}
+
+
+
+/* ----------------------------------- Game Development CSS ----------------------------------- */
+#gamedevelopment {
+    padding-top: 80px;
+}
+
+/* ----------------------------------- Programming CSS ----------------------------------- */
+#programming {
+    padding-top: 80px;
+    min-height: 95.3vh;
+}
+
+/* ----------------------------------- Projects CSS ----------------------------------- */
+.projects_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 50px;;
+    row-gap: 50px;
+}
+
+.project_slot {
+    width: 100%;
+    height: auto;
+    background: #333;
+    border: 4px solid #333;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.project_slot:hover {
+    border-color: var(--accent);
+}
+
+.project_img_container {
+    padding: 25px;
+}
+
+#project_img {
+    width: 100%;
+    border: 4px solid var(--image-border);
+    border-radius: 10px;
+}
+
+.project_summary {
+    padding: 25px;
+    padding-top: 0px;
+}
+
+.project_title {
+    padding-bottom: 10px;
+    color: var(--accent);
+    font-size: 1.6rem;
+}
+
+.project_date {
+    padding-bottom: 10px;
+    font-size: 1.4rem;
+}
+
+.project_role {
+    padding-bottom: 10px;
+    font-size: 1.3rem;
+}
+
+.project_description {
+    padding-bottom: 10px;
+    font-size: 1.2rem;
+}
+
+#project_link {
+    text-decoration: none;  
+}

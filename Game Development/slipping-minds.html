@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="image/png" href="../Files\Images\favicon.png">
+    <link rel="stylesheet" href="../stylesheet-projects.css">
+    <script src="https://kit.fontawesome.com/96805f0250.js" crossorigin="anonymous"></script>
+    <title>LR | Project Template</title>
+</head>
+
+<body>   
+    <!-- Navbar -->
+    <section class="home" id="home">
+        <nav class="navbar">
+            <div class="navbar_container">
+                <a href="index.html" id="navbar_logo">LR</a>
+                <ul class="navbar_menu">
+                    <li><a href="../index.html" class="navbar_links">Home</a></li>
+                    <li><a href="../game-development.html" class="navbar_links">Game Development</a></li>
+                    <li><a href="../programming.html" class="navbar_links">Programming</a></li>
+                    <li><a href="../index.html#about" class="navbar_links">About</a></li>
+                    <li><a href="../index.html#contact" class="navbar_links">Contact</a></li>
+                </ul>
+            </div>   
+        </nav>
+    </section>
+
+    <!-- Summary -->
+    <section class="section" id="summary">
+        <div class="section_container"> 
+            <div class="heading_container">
+                <h1 class="heading_text">Project Title</h1>
+                <hr class="heading_underline">
+            </div>
+
+            <div class="summary_grid">
+                <div class="description">
+                    <p><span style="font-style: italic">Slipping Minds</span> was a game jam project created in 24 hours over two days.  Working in a team of four we created a game based around memory loss. The game is played from the perspective of a father who is looking for his lost son.
+                        <br><br>Over the course of the game he begins to get tired and loses his memory as shown with the game getting darker and more greyscale. The game uses a platformer layout with some key mechanics including a grappling hook, spikes and saws.
+                        <br><br>For this game jam we were awarded the best overall game prize. 
+                    </p>
+                </div>
+
+                <div class="summary_line"></div>
+
+                <div> 
+                    <h1 class="about_heading">Development</h1>
+                    <p class="about_text">2019 (Team: 4)</p>
+                    <h1 class="about_heading">Platform</h1>
+                    <p class="about_text">PC</p>
+                    <h1 class="about_heading">Software Used</h1>
+                    <p class="about_text"><a href="https://gamemaker.io/en/get" target="_blank" id="about_link">GameMaker Studio 2</a></p>
+                </div>
+            </div>
+    </section>
+
+<!-- YouTube Video -->
+<section class="section" id="youtube">
+    <div class="section_container"> 
+        <div class="heading_container">
+            <h1 class="heading_text">Gameplay Demo</h1>
+            <hr class="heading_underline">
+        </div>
+
+        <div class="gameplay_video">
+            <iframe class="youtube_video" src="https://www.youtube.com/embed/FT9TClQOKZ4"> </iframe>
+        </div>
+    </div>
+</section>
+
+<!-- Screenshots -->
+<section class="section">
+    <div class="section_container"> 
+        <div class="heading_container">
+            <h1 class="heading_text">Screenshots</h1>
+            <hr class="heading_underline">
+        </div>
+
+        <div class="slideshow_container" id="slideshow1">
+            <div class="slide">
+                <img src="../Files/Images/Game Development/Slipping-Minds/Menu.png" id="slide_img">
+                <div class="slide_title">Main Menu</div>
+                <div class="slide_number">1 / 8</div>
+            </div>
+            <div class="slide">
+                <img src="../Files/Images/Game Development/Slipping-Minds/Tutorial.png" id="slide_img">
+                <div class="slide_title">Tutorial Level</div>
+                <div class="slide_number">2 / 8</div>
+            </div>
+            <div class="slide">
+                <img src="../Files/Images/Game Development/Slipping-Minds/Level1Spikes.png" id="slide_img">
+                <div class="slide_title">Level 1 - Spikes</div>
+                <div class="slide_number">3 / 8</div>
+            </div>
+            <div class="slide">
+                <img src="../Files/Images/Game Development/Slipping-Minds/Level1Swing.png" id="slide_img">
+                <div class="slide_title">Level 1 - Swinging</div>
+                <div class="slide_number">4 / 8</div>
+            </div>
+            <div class="slide">
+                <img src="../Files/Images/Game Development/Slipping-Minds/Level3.png" id="slide_img">
+                <div class="slide_title">Level 3</div>
+                <div class="slide_number">5 / 8</div>
+            </div>
+            <div class="slide">
+                <img src="../Files/Images/Game Development/Slipping-Minds/Level3Swing.png" id="slide_img">
+                <div class="slide_title">Level 3 - Swinging</div>
+                <div class="slide_number">6 / 8</div>
+            </div>
+            <div class="slide">
+                <img src="../Files/Images/Game Development/Slipping-Minds/Level5.png" id="slide_img">
+                <div class="slide_title">Level 5</div>
+                <div class="slide_number">7 / 8</div>
+            </div>
+            <div class="slide">
+                <img src="../Files/Images/Game Development/Slipping-Minds/Level5End.png" id="slide_img">
+                <div class="slide_title">Level 5 - Ending</div>
+                <div class="slide_number">8 / 8</div>
+            </div>
+
+            <a class="slideshow_prev" onclick="moveSlides(-1)">&#10094;</a>
+            <a class="slideshow_next" onclick="moveSlides(1)">&#10095;</a>
+        </div>
+    </div>
+</section>
+
+    
+    <div class="modal_popup" id="modal_popup">
+        <div class="modal_content_container">
+            <div class="modal_img_container">
+                <span class="modal_close_hidden">&times;</span>
+                <img class="modal_content" id="modal_img_popup" src="../Files/Images/1920x1080.png">
+                <span class="modal_close">&times;</span>
+            </div>
+            
+            <div id="modal_caption">Text Missing</div>
+        </div>
+    </div> 
+
+    <!-- Footer -->
+    <div class="footer_container">
+        <p class="footer_copyright">Liam Rickman | © <span id="copyright-year"></span> All rights reserved</p>
+    </div>
+
+    <!-- Javascript -->
+    <script src="../app.js"></script>
+</body>
+</html>
